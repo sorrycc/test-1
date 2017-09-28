@@ -1,0 +1,143 @@
+{
+  "name": "sorrycc/test-1",
+  "version": "0.1.4",
+  "libraries": {
+    "xv": "^1.1.25"
+  },
+  "title": "",
+  "branch": "",
+  "style": {
+    "name": "Default",
+    "componentSet": {
+      "nav": "nav/BasicNav",
+      "header": "header/BannerHeader",
+      "article": "article/BasicArticle",
+      "footer": "footer/BasicFooter"
+    },
+    "fontFamily": "-apple-system, BlinkMacSystemFont, sans-serif",
+    "fontWeight": 400,
+    "bold": 600,
+    "lineHeight": 1.5,
+    "typeScale": [
+      72,
+      48,
+      24,
+      20,
+      16,
+      14,
+      12
+    ],
+    "monospace": "Menlo, monospace",
+    "heading": {
+      "fontFamily": null,
+      "fontStyle": null,
+      "fontWeight": 600,
+      "lineHeight": 1.25,
+      "textTransform": null,
+      "letterSpacing": null
+    },
+    "h0": {},
+    "h1": {},
+    "h2": {},
+    "h3": {},
+    "h4": {},
+    "h5": {},
+    "h6": {},
+    "alternativeText": {},
+    "space": [
+      0,
+      8,
+      16,
+      32,
+      48,
+      64,
+      96
+    ],
+    "layout": {
+      "maxWidth": 1024,
+      "centered": false
+    },
+    "colors": {
+      "text": "#111",
+      "background": "#fff",
+      "primary": "#08e",
+      "secondary": "#059",
+      "highlight": "#e08",
+      "border": "#ddd",
+      "muted": "#eee"
+    },
+    "border": {
+      "width": 1,
+      "radius": 2
+    },
+    "link": {},
+    "button": {
+      "hover": {
+        "boxShadow": "inset 0 0 0 999px rgba(0, 0, 0, .125)"
+      }
+    },
+    "input": {},
+    "body": {
+      "margin": 0
+    },
+    "breakpoints": {
+      "xs": "@media screen and (max-width:40em)",
+      "sm": "@media screen and (min-width:40em)",
+      "md": "@media screen and (min-width:52em)",
+      "lg": "@media screen and (min-width:64em)"
+    }
+  },
+  "content": [
+    {
+      "component": "nav",
+      "links": [
+        {
+          "href": "https://github.com/sorrycc/test-1",
+          "text": "GitHub"
+        },
+        {
+          "href": "https://npmjs.com/package/ant-design-pro-site",
+          "text": "npm"
+        }
+      ]
+    },
+    {
+      "component": "header",
+      "heading": "test-1",
+      "subhead": "An enterprise-class UI design language and React-based implementation",
+      "children": [
+        {
+          "component": "ui/TweetButton",
+          "text": "test-1: An enterprise-class UI design language and React-based implementation",
+          "url": null
+        },
+        {
+          "component": "ui/GithubButton",
+          "user": "sorrycc",
+          "repo": "test-1"
+        }
+      ],
+      "text": "v0.0.1"
+    },
+    {
+      "component": "article",
+      "metadata": {
+        "source": "github.readme"
+      },
+      "html": "<h3>&#x76EE;&#x5F55;&#x7ED3;&#x6784;</h3>\n<ul>\n<li>docs // &#x6587;&#x6863;&#x76EE;&#x5F55;</li>\n<li>scaffold // &#x811A;&#x624B;&#x67B6;<ul>\n<li>src/ant-design-pro // &#x4E1A;&#x52A1;&#x7EC4;&#x4EF6;&#x76EE;&#x5F55;</li>\n</ul>\n</li>\n<li>site // &#x7AD9;&#x70B9;</li>\n<li>tool // &#x672C;&#x5730;&#x5DE5;&#x5177;</li>\n</ul>\n<h3>&#x7528;&#x6CD5;</h3>\n<ul>\n<li><code>npm install</code></li>\n<li><code>npm run install-start</code><ul>\n<li>8001 &#x7AEF;&#x53E3;&#x662F;&#x6587;&#x6863;&#x7EC4;&#x4EF6;&#x7AD9;&#x70B9; ( &#x53EF;&#x76F4;&#x63A5;&#x8BBF;&#x95EE;&#x811A;&#x624B;&#x67B6;&#x7AD9;&#x70B9; )</li>\n<li>8000 &#x662F;&#x811A;&#x624B;&#x67B6;&#x7AD9;&#x70B9;</li>\n</ul>\n</li>\n</ul>\n<h3>&#x811A;&#x672C;&#x547D;&#x4EE4;</h3>\n<pre>\n<span class=\"hljs-comment\"># &#x5E38;&#x7528;&#x547D;&#x4EE4;</span>\nnpm run start <span class=\"hljs-comment\"># &#x542F;&#x52A8;&#x7AD9;&#x70B9; ( &#x5305;&#x542B;&#x811A;&#x624B;&#x67B6;&#x7AD9;&#x70B9; )</span>\nnpm run site <span class=\"hljs-comment\"># &#x90E8;&#x7F72;&#x7AD9;&#x70B9; ( &#x5305;&#x542B;&#x811A;&#x624B;&#x67B6; )</span>\nnpm run scaffold-build <span class=\"hljs-comment\"># &#x90E8;&#x7F72;&#x811A;&#x624B;&#x67B6; ( &#x5355;&#x72EC; )</span>\nnpm run scaffold-build:static <span class=\"hljs-comment\"># &#x90E8;&#x7F72;&#x811A;&#x624B;&#x67B6;, mock &#x6570;&#x636E;&#x9759;&#x6001;&#x5316;</span>\n\nnpm run publish-components <span class=\"hljs-comment\"># &#x53D1;&#x5E03;&#x7EC4;&#x4EF6;&#x5230; npm</span>\n\n<span class=\"hljs-comment\"># &#x5206;&#x89E3;&#x547D;&#x4EE4;</span>\nnpm run lerna\n\nnpm run bisheng-start\nnpm run bisheng-build\n\nnpm run scaffold-install\nnpm run scaffold-start\nnpm run scaffold-move\nnpm run scaffold-build\n\nnpm run tool-install</pre><h3>&#x8BF4;&#x660E;</h3>\n<h4>&#x6574;&#x4F53;&#x7ED3;&#x6784;</h4>\n<p>&#x57FA;&#x672C;&#x8DDF; ant.design &#x7F51;&#x7AD9;&#x7ED3;&#x6784;&#x4E00;&#x81F4;, &#x7EC4;&#x4EF6;&#x90E8;&#x7F72;&#x6539;&#x4E3A; lerna, &#x7AD9;&#x70B9;&#x90E8;&#x7F72;&#x901A;&#x8FC7;&#x672C;&#x5730; tool &#x5C06;&#x811A;&#x624B;&#x67B6;&#x751F;&#x6210;&#x7684;&#x6587;&#x4EF6;&#x62F7;&#x8D1D;&#x5230; _site &#x76EE;&#x5F55;&#x4E0B;, &#x4EE5;&#x4FBF;&#x5728;&#x7EDF;&#x4E00;&#x7AD9;&#x70B9;&#x90FD;&#x53EF;&#x8BBF;&#x95EE;, &#x7EDF;&#x4E00;&#x90E8;&#x7F72;&#x3002;</p>\n<h4>&#x5982;&#x4F55;&#x5199;&#x6587;&#x6863;</h4>\n<p>&#x5728; docs &#x76EE;&#x5F55;&#x4E0B;&#x4E66;&#x5199; markdown &#x5373;&#x53EF;, &#x8DDF; ant.design &#x7F51;&#x7AD9;&#x4E00;&#x81F4;</p>\n<h4>&#x5982;&#x4F55;&#x5199;&#x7EC4;&#x4EF6;</h4>\n<p>&#x5728; scaffold/src/ant-design-pro &#x76EE;&#x5F55;&#x4E0B;&#x4E66;&#x5199; markdown &#x548C;&#x4EE3;&#x7801;, &#x8DDF; ant.design &#x7F51;&#x7AD9;&#x4E00;&#x81F4;, &#x540E;&#x7EED;&#x53EF;&#x4EE5;&#x8003;&#x8651;&#x91C7;&#x7528;&#x5DE5;&#x5177;&#x5355;&#x72EC;&#x8C03;&#x8BD5;&#x67D0;&#x4E00;&#x4E2A;&#x7EC4;&#x4EF6;, &#x65B9;&#x4FBF;&#x7EC4;&#x4EF6;&#x5F00;&#x53D1;&#x3002;</p>\n<h4>&#x5982;&#x4F55;&#x5199;&#x811A;&#x624B;&#x67B6;</h4>\n<p>&#x53EF;&#x4EE5;&#x542F;&#x52A8;&#x6574;&#x4E2A;&#x7F51;&#x7AD9;, &#x4E5F;&#x53EF;&#x4EE5; <code>npm run scaffold-start</code>, &#x8FDB;&#x5165; scaffold &#x6587;&#x4EF6;&#x5939;&#x8FDB;&#x884C;&#x5F00;&#x53D1;</p>\n<h4>&#x5982;&#x4F55;&#x90E8;&#x7F72;(&#x5185;&#x90E8;)</h4>\n<ol>\n<li><code>git remote add gitlab git@gitlab.alipay-inc.com:ued/antd-pro.git</code></li>\n<li><code>git checkout site</code></li>\n<li><code>git merge master</code></li>\n<li><code>tnpm run scaffold-build:static</code></li>\n<li><code>git add ./</code></li>\n<li><code>git commit</code></li>\n<li><code>git push gitlab site</code></li>\n<li>&#x53BB; gitlab mr</li>\n</ol>\n"
+    },
+    {
+      "component": "footer",
+      "links": [
+        {
+          "href": "https://github.com/sorrycc/test-1",
+          "text": "GitHub"
+        },
+        {
+          "href": "https://github.com/sorrycc",
+          "text": "sorrycc"
+        }
+      ]
+    }
+  ]
+}
